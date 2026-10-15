@@ -1,0 +1,18 @@
+@ProductsApi_HostAddress = https://localhost:7001
+
+### Get all products
+GET {{ProductsApi_HostAddress}}/api/products
+Accept: application/json
+
+### Get a product by ID
+GET {{ProductsApi_HostAddress}}/api/products/1
+Accept: application/json
+
+### Create a product
+POST {{ProductsApi_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard",
+  "price": 89.99
+}
